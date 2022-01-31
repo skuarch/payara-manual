@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: payara-manual-ingress
+spec:
+#  defaultBackend:
+#    service:
+#      name: payara-manual-service
+#      port:
+#        number: 32000
+  rules:
+  - host: payara.net
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: payara-manual-service
+            port:
+              number: 9000
