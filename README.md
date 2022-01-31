@@ -1,7 +1,8 @@
 # Requirements
 - minikube
 - kubectl
-- minikube with ingress enabled (minikube addons enable ingress)
+- minikube with ingress enabled 
+> minikube addons enable ingress
 - modify *host file* with parayara.net host
 > 127.0.0 payara.net  
 192.168.49.2 payara.net
